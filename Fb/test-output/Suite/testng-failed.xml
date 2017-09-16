@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <parameter name="UN" value="DemoSalesManager"/>
+  <parameter name="pwd" value="crmsfa"/>
+  <parameter name="URL" value="http://www.leaftaps.com/control/main"/>
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="classwor.TC_CreateContact">
+        <methods>
+          <include name="Login"/>
+          <include name="createContact"/>
+        </methods>
+      </class> <!-- classwor.TC_CreateContact -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
